@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "Faustão Authenticator",
+    "description": "Faustão Authenticator",
+    "version": "1.0",
+
+    "permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://accounts.google.com/*"],
+            "js": ["script/googleAccounts.js"]
+        },
+        {
+            "matches": ["https://www.facebook.com/*"],
+            "js": ["script/facebook.js"]
+        }
+    ]
+}
