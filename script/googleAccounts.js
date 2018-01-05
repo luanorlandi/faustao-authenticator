@@ -1,4 +1,4 @@
-var observer = new MutationObserver(function(mutations) {
+const observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
         if(mutation.type == "attributes" &&
             mutation.attributeName == "aria-invalid" &&
@@ -9,9 +9,9 @@ var observer = new MutationObserver(function(mutations) {
     });
 });
 
-var element = document.getElementById("view_container");
+const element = document.getElementById("view_container");
 
-var config = {
+const config = {
     attributes: true,
     subtree: true
 };
