@@ -1,15 +1,21 @@
 {
     "manifest_version": 2,
-
     "name": "Faustão Authenticator",
     "description": "Faustão Authenticator",
     "version": "1.0",
-
     "permissions": [
         "http://*/*",
         "https://*/*",
         "tabs"
     ],
+    "browser_action": {
+        "default_icon": "icon/icon-128.png"
+    },
+    "icons": {
+        "16": "icon/icon-16.png",
+        "48": "icon/icon-48.png",
+        "128": "icon/icon-128.png"
+    },
     "background": {
         "scripts": ["background.js"],
         "persistent": true
