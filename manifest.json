@@ -22,6 +22,10 @@
         {
             "matches": ["https://www.facebook.com/*"],
             "js": ["script/facebook.js"]
+        },
+        {
+            "matches": ["https://www.instagram.com/*"],
+            "js": ["script/instagram.js"]
         }
     ]
 }

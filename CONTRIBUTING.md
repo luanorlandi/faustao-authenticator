@@ -22,6 +22,7 @@ If your verification is complex and happens with DOM changes, see [`script/accou
 
 - Google
 - Facebook
+- Instagram
 
 ## License
 
